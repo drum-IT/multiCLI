@@ -1,5 +1,5 @@
 {
-  "name": "multi-cli",
+  "name": "multicli",
   "version": "1.0.0",
   "description": "A Multipurpose CLI Tool",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "bin": {
-    "multitool": "bin/multitool"
+    "multicli": "bin/multicli"
   },
   "devDependencies": {
     "eslint": "^5.6.1",

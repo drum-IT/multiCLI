@@ -14,11 +14,15 @@ const menus = {
 
       --location, -l ..... the location you want to see today's weather for
 
+      If no options are provided, weather for the user's IP address will be shown.
+
     `,
   forecast: `
     multicli forecast <options>
 
     --location, -l ..... the location you want to see a weather forecast for
+
+    If no options are provided, a forecast for the user's IP address will be shown.
 
   `
 };

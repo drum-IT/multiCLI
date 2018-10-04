@@ -1,3 +1,4 @@
+// the text sent by the help command
 const menus = {
   main: `
     multitool [command] <options>
@@ -27,8 +28,8 @@ const menus = {
   `
 };
 
+// determine which help text to log, and log it
 module.exports = args => {
   const subCmd = args._[0] === "help" ? args._[1] : args._[0];
-
   console.log(menus[subCmd] || menus.main);
 };

@@ -1,5 +1,7 @@
+// get dependencies
 const axios = require("axios");
 
+// get weather from Yahoo weather api
 module.exports = async location => {
   const results = await axios({
     method: "get",
@@ -10,6 +12,5 @@ module.exports = async location => {
         (select woeid from geo.places(1) where text="${location}")`
     }
   });
-
   return results.data.query.results.channel.item;
 };

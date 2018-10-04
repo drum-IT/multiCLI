@@ -4,13 +4,10 @@ const getLocation = require("../utils/location");
 
 module.exports = async args => {
   const spinner = ora().start();
-
   try {
     const location = args.location || args.l || (await getLocation());
     const weather = await getWeather(location);
-
     spinner.stop();
-
     console.log(`Forecast for ${location}:`);
     weather.forecast.forEach(item =>
       console.log(
@@ -21,7 +18,6 @@ module.exports = async args => {
     );
   } catch (err) {
     spinner.stop();
-
     console.error(err);
   }
 };

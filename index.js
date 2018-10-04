@@ -1,4 +1,13 @@
+// get dependencies
 const minimist = require("minimist");
+const error = require("./utils/error");
+
+// get commands
+const help = require("./cmds/help");
+const version = require("./cmds/version");
+const hello = require("./cmds/hello");
+const weather = require("./cmds/weather");
+const forecast = require("./cmds/forecast");
 
 module.exports = () => {
   const args = minimist(process.argv.slice(2));
@@ -13,23 +22,23 @@ module.exports = () => {
   }
 
   switch (cmd) {
-    case "version":
-      require("./cmds/version")(args);
-      break;
     case "help":
-      require("./cmds/help")(args);
+      help(args);
+      break;
+    case "version":
+      version(args);
       break;
     case "hello":
-      require("./cmds/hello")(args);
+      hello(args);
       break;
     case "weather":
-      require("./cmds/weather")(args);
+      weather(args);
       break;
     case "forecast":
-      require("./cmds/forecast")(args);
+      forecast(args);
       break;
     default:
-      console.error(`"${cmd}" is not a valid command`);
+      error(`"${cmd}" is not a valid command`, true);
       break;
   }
 };

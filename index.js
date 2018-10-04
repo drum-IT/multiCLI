@@ -22,6 +22,12 @@ module.exports = () => {
     case "hello":
       require("./cmds/hello")(args);
       break;
+    case "weather":
+      require("./cmds/weather")(args);
+      break;
+    case "forecast":
+      require("./cmds/forecast")(args);
+      break;
     default:
       console.error(`"${cmd}" is not a valid command`);
       break;

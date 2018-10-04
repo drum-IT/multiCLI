@@ -5,7 +5,7 @@ const getLocation = require("../utils/location");
 module.exports = async args => {
   const spinner = ora().start();
   try {
-    const location = args.location || args.l || (await getLocation());
+    const location = args.location || args.l || (await getLocation("location"));
     const weather = await getWeather(location);
     spinner.stop();
     console.log(`Forecast for ${location}:`);

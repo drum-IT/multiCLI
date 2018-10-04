@@ -8,6 +8,7 @@ const menus = {
     hello .............. the tool will say hello, but only if you tell it your --name
     weather ............ show today's weather for a location
     weather ............ show a weather forecast for a location
+    clock .............. get date and time for current location based on IP address
     
     `,
   weather: `

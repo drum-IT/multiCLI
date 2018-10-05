@@ -7,11 +7,16 @@ const getLocation = require("../utils/location");
 module.exports = async args => {
   const spinner = ora().start();
   try {
-    const location = args.location || args.l || (await getLocation());
+    const location = args.location || args.l || (await getLocation("location"));
     const weather = await getWeather(location);
     spinner.stop();
+    const conditions = {
+      temp: weather.condition.temp,
+      text: weather.condition.text
+    };
     console.log(`Current conditions in ${location}:`);
     console.log(`\t${weather.condition.temp}° ${weather.condition.text}`);
+    return conditions;
   } catch (err) {
     spinner.stop();
     console.error(err);

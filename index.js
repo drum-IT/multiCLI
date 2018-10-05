@@ -9,6 +9,8 @@ const hello = require("./cmds/hello");
 const weather = require("./cmds/weather");
 const forecast = require("./cmds/forecast");
 const country = require("./cmds/country");
+const image = require("./cmds/image");
+const clock = require("./cmds/clock");
 
 module.exports = () => {
   const args = minimist(process.argv.slice(2));
@@ -40,6 +42,11 @@ module.exports = () => {
       break;
     case "country":
       country(args);
+      break;
+    case "image":
+      image(args);
+    case "clock":
+      clock(args);
       break;
     default:
       error(`"${cmd}" is not a valid command`, true);

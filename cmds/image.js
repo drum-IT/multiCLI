@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const pretty = require('../utils/pretty-print/pretty-print');
 
 const BASE_URL = "https://picsum.photos";
 
@@ -80,7 +81,7 @@ module.exports = async () => {
   const {
     options: { blur, random, grey }
   } = await askImageOptions();
-  console.log(
+  pretty.success(
     `${BASE_URL}${grey}${dimensions}${(random || blur) &&
       "/?"}${random}${random && blur && "&"}${blur}`
   );

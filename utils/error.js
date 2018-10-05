@@ -4,4 +4,5 @@ module.exports = (message, exit) => {
   if (exit) {
     process.exit(1);
   }
+  return message;
 };

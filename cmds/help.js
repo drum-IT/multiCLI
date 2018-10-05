@@ -9,6 +9,7 @@ const menus = {
     weather ............ show today's weather for a location
     forecast ........... show a weather forecast for a location
     clock .............. get date and time for current location based on IP address
+    country............. get helpful country information for a location
     
     `,
   weather: `
@@ -34,7 +35,14 @@ const menus = {
 
     If no options are provided, the tool will be as friendly
 
-  `
+  `,
+  country: `
+    multicli country <options>
+    
+    --info, -i ..... the country you would like information on.
+    
+    if no options are provided, country information based on the user's IP address will be shown.
+  `,
 };
 
 // determine which help text to log, and log it

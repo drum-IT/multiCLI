@@ -5,9 +5,9 @@ const menus = {
 
     version ............ show package version
     help ............... show help menu for a command
-    hello .............. the tool will say hello, but only if you tell it your --name
+    hello .............. the tool will say hello
     weather ............ show today's weather for a location
-    forecast ............ show a weather forecast for a location
+    forecast ........... show a weather forecast for a location
     clock .............. get date and time for current location based on IP address
     
     `,
@@ -25,6 +25,14 @@ const menus = {
     --location, -l ..... the location you want to see a weather forecast for
 
     If no options are provided, a forecast for the user's IP address will be shown.
+
+  `,
+  hello: `
+    multicli hello <options>
+
+    --name, -n ..... your name
+
+    If no options are provided, the tool will be as friendly
 
   `
 };

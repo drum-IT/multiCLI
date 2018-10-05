@@ -7,6 +7,6 @@ module.exports = async () => {
     method: "get",
     url: "http://ip-api.com/json"
   });
-  const { city, region } = results.data;
-  return `${city}, ${region}`;
+  const { city, region, country } = results.data;
+  return `${city}, ${region}, ${country}`;
 };

@@ -4,7 +4,9 @@ multiCLI is a javascript command line interface tool built by a group of aspirin
 
 ### Installation
 
-multiCLI requires [Node.js](https://nodejs.org/) to run.
+multiCLI requires [Node.js](https://nodejs.org/) to run, and now encourages the usage of [yarn](https://yarnpkg.com/). 
+
+_Note: Although the usage of Yarn is encouraged, NPM is still supported._
 
 Start by cloning the repository, and installing the dependencies...
 
@@ -12,6 +14,14 @@ Start by cloning the repository, and installing the dependencies...
 $ git clone https://github.com/drum-IT/multiCLI.git
 $ cd multiCLI
 $ npm install
+```
+
+_OR_
+
+```sh
+$ git clone https://github.com/drum-IT/multiCLI.git
+$ cd multiCLI
+$ yarn install
 ```
 
 Give the bin file the proper permissions so that it can be run...
@@ -47,4 +57,19 @@ module.exports = args => {
 ```
 
 You can access the args object, and perform any logic you like. Take a look at the hello.js file for a simple example.
+
+## Testing
+This project now supports and encourages test coverage via [Jest](https://jestjs.io/). 
+
+### Running the Test Suite
+
+```sh
+$ npm run test
+```
+
+_OR_
+
+```sh
+$ yarn test
+```
 

@@ -1,6 +1,7 @@
 const ora = require("ora");
 const getWeather = require("../utils/weather");
 const getLocation = require("../utils/location");
+const error = require("../utils/error");
 
 module.exports = async args => {
   const spinner = ora().start();
@@ -19,6 +20,6 @@ module.exports = async args => {
     return weather.forecast;
   } catch (err) {
     spinner.stop();
-    console.error(err);
+    return error(err, true);
   }
 };

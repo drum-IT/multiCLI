@@ -12,5 +12,11 @@ module.exports = async location => {
         (select woeid from geo.places(1) where text="${location}")`
     }
   });
-  return results.data.query.results.channel.item;
+  const {
+    title,
+    condition,
+    forecast
+  } = results.data.query.results.channel.item;
+  const weather = { title, condition, forecast };
+  return weather;
 };

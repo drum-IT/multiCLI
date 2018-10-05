@@ -45,6 +45,7 @@ module.exports = () => {
       break;
     case "image":
       image(args);
+      break;
     case "clock":
       clock(args);
       break;

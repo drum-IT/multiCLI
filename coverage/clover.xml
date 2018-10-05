@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1538752275231" clover="3.2.0">
+  <project timestamp="1538752275232" name="All files">
+    <metrics statements="55" coveredstatements="46" conditionals="17" coveredconditionals="13" methods="7" coveredmethods="6" elements="79" coveredelements="65" complexity="0" loc="55" ncloc="55" packages="2" files="6" classes="6">
+      <package name="cmds">
+        <metrics statements="38" coveredstatements="34" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <file name="forecast.js" path="/Users/miles/Development/repositories/multiCLI/cmds/forecast.js">
+          <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="cond" truecount="3" falsecount="0"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="10" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+        <file name="hello.js" path="/Users/miles/Development/repositories/multiCLI/cmds/hello.js">
+          <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="3" type="cond" truecount="4" falsecount="0"/>
+          <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+        </file>
+        <file name="weather.js" path="/Users/miles/Development/repositories/multiCLI/cmds/weather.js">
+          <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="cond" truecount="3" falsecount="0"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="utils">
+        <metrics statements="17" coveredstatements="12" conditionals="5" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <file name="error.js" path="/Users/miles/Development/repositories/multiCLI/utils/error.js">
+          <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="location.js" path="/Users/miles/Development/repositories/multiCLI/utils/location.js">
+          <metrics statements="9" coveredstatements="7" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="cond" truecount="1" falsecount="2"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+        </file>
+        <file name="weather.js" path="/Users/miles/Development/repositories/multiCLI/utils/weather.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

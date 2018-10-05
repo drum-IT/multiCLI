@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/drum-IT/multiCLI/badge.svg?branch=master)](https://coveralls.io/github/drum-IT/multiCLI?branch=master)
+
 # multiCLI
 
 multiCLI is a javascript command line interface tool built by a group of aspiring developers. It offers many functions. Some useful, some useless, but all of them fun!
@@ -52,7 +54,7 @@ The bare minimum code is as follows:
 
 ```
 module.exports = args => {
-  
+
 };
 ```
 
@@ -72,4 +74,3 @@ _OR_
 ```sh
 $ yarn test
 ```
-

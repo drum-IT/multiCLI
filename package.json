@@ -4,7 +4,8 @@
   "description": "A Multipurpose CLI Tool",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "multicli": "bin/multicli"
   },
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^5.6.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",

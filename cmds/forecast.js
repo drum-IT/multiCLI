@@ -16,6 +16,7 @@ module.exports = async args => {
         }`
       )
     );
+    return weather.forecast;
   } catch (err) {
     spinner.stop();
     console.error(err);

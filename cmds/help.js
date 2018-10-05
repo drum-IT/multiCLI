@@ -1,3 +1,5 @@
+const pretty = require('../utils/pretty-print/pretty-print');
+
 // the text sent by the help command
 const menus = {
   main: `
@@ -40,5 +42,5 @@ const menus = {
 // determine which help text to log, and log it
 module.exports = args => {
   const subCmd = args._[0] === "help" ? args._[1] : args._[0];
-  console.log(menus[subCmd] || menus.main);
+  pretty.log(menus[subCmd] || menus.main);
 };

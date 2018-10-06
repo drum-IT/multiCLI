@@ -23,4 +23,4 @@ module.exports = async args => {
     spinner.stop();
     return error(err, true);
   }
-};
+}; 

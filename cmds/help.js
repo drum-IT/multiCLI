@@ -13,6 +13,7 @@ const menus = {
     clock .............. get date and time for current location based on IP address
     country............. get helpful country information for a location
     quote .............. display a random quote
+    image .............. get a random url image of specified dimenions from picsum API
     
     `,
   weather: `

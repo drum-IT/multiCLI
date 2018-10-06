@@ -8,6 +8,7 @@ const version = require("./cmds/version");
 const hello = require("./cmds/hello");
 const weather = require("./cmds/weather");
 const forecast = require("./cmds/forecast");
+const country = require("./cmds/country");
 const image = require("./cmds/image");
 const clock = require("./cmds/clock");
 
@@ -38,6 +39,9 @@ module.exports = () => {
       break;
     case "forecast":
       forecast(args);
+      break;
+    case "country":
+      country(args);
       break;
     case "image":
       image(args);

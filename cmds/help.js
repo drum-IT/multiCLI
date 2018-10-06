@@ -3,7 +3,7 @@ const pretty = require('../utils/pretty-print/pretty-print');
 // the text sent by the help command
 const menus = {
   main: `
-    multitool [command] <options>
+    multicli [command] <options>
 
     version ............ show package version
     help ............... show help menu for a command

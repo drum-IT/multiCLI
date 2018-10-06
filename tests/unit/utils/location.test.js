@@ -1,4 +1,4 @@
-const locationAPI = require("../../utils/location");
+const locationAPI = require("../../../utils/location");
 
 test("String with city and region when location type is location", async () => {
   const results = await locationAPI("location");

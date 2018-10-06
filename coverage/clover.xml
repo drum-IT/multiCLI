@@ -1,43 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1538752275231" clover="3.2.0">
-  <project timestamp="1538752275232" name="All files">
-    <metrics statements="55" coveredstatements="46" conditionals="17" coveredconditionals="13" methods="7" coveredmethods="6" elements="79" coveredelements="65" complexity="0" loc="55" ncloc="55" packages="2" files="6" classes="6">
+<coverage generated="1538842709439" clover="3.2.0">
+  <project timestamp="1538842709439" name="All files">
+    <metrics statements="77" coveredstatements="71" conditionals="25" coveredconditionals="23" methods="18" coveredmethods="18" elements="120" coveredelements="112" complexity="0" loc="77" ncloc="77" packages="3" files="8" classes="8">
       <package name="cmds">
-        <metrics statements="38" coveredstatements="34" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
-        <file name="forecast.js" path="/Users/miles/Development/repositories/multiCLI/cmds/forecast.js">
-          <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <metrics statements="42" coveredstatements="38" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <file name="forecast.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/cmds/forecast.js">
+          <metrics statements="17" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="7" count="1" type="stmt"/>
-          <line num="8" count="1" type="cond" truecount="3" falsecount="0"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="13" count="10" type="stmt"/>
-          <line num="19" count="1" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-        </file>
-        <file name="hello.js" path="/Users/miles/Development/repositories/multiCLI/cmds/hello.js">
-          <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="3" type="cond" truecount="4" falsecount="0"/>
-          <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-        </file>
-        <file name="weather.js" path="/Users/miles/Development/repositories/multiCLI/cmds/weather.js">
-          <metrics statements="15" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-          <line num="2" count="1" type="stmt"/>
-          <line num="3" count="1" type="stmt"/>
           <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
           <line num="7" count="1" type="stmt"/>
           <line num="8" count="1" type="stmt"/>
           <line num="9" count="1" type="stmt"/>
@@ -45,40 +18,98 @@
           <line num="11" count="1" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="10" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+        <file name="hello.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/cmds/hello.js">
+          <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="3" type="cond" truecount="4" falsecount="0"/>
+          <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+        </file>
+        <file name="weather.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/cmds/weather.js">
+          <metrics statements="16" coveredstatements="14" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="cond" truecount="3" falsecount="0"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
           <line num="18" count="1" type="stmt"/>
           <line num="19" count="1" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
           <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
         </file>
       </package>
       <package name="utils">
-        <metrics statements="17" coveredstatements="12" conditionals="5" coveredconditionals="1" methods="3" coveredmethods="2"/>
-        <file name="error.js" path="/Users/miles/Development/repositories/multiCLI/utils/error.js">
-          <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="20" coveredstatements="18" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <file name="error.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/utils/error.js">
+          <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="cond" truecount="1" falsecount="1"/>
           <line num="5" count="0" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
         </file>
-        <file name="location.js" path="/Users/miles/Development/repositories/multiCLI/utils/location.js">
-          <metrics statements="9" coveredstatements="7" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="7" count="2" type="stmt"/>
-          <line num="11" count="2" type="stmt"/>
-          <line num="12" count="2" type="cond" truecount="1" falsecount="2"/>
-          <line num="14" count="2" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
+        <file name="location.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/utils/location.js">
+          <metrics statements="9" coveredstatements="8" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="12" count="4" type="cond" truecount="2" falsecount="1"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
           <line num="18" count="0" type="stmt"/>
         </file>
-        <file name="weather.js" path="/Users/miles/Development/repositories/multiCLI/utils/weather.js">
-          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="15" count="2" type="stmt"/>
+        <file name="weather.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/utils/weather.js">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="utils.pretty-print">
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="11" coveredmethods="11"/>
+        <file name="dictionary.pretty-print.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/utils/pretty-print/dictionary.pretty-print.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="30" count="4" type="stmt"/>
+        </file>
+        <file name="pretty-print.js" path="/home/taylor/Dev/Collab/TeamCoderz/multiCLI/utils/pretty-print/pretty-print.js">
+          <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="11" coveredmethods="11"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="41" count="4" type="stmt"/>
+          <line num="48" count="2" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="69" count="11" type="stmt"/>
+          <line num="76" count="1" type="stmt"/>
+          <line num="83" count="2" type="stmt"/>
+          <line num="97" count="27" type="cond" truecount="8" falsecount="0"/>
         </file>
       </package>
     </metrics>

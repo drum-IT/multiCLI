@@ -1,4 +1,4 @@
-const forecast = require("../../cmds/forecast");
+const forecast = require("../../../cmds/forecast");
 
 test("Return array containing object for each day in forecast.", async () => {
   const results = await forecast({});

@@ -1,4 +1,4 @@
-const weatherAPI = require("../../utils/weather");
+const weatherAPI = require("../../../utils/weather");
 
 test("Return object containing title, condition object, and forecast array.", async () => {
   const results = await weatherAPI("Boston, MA");

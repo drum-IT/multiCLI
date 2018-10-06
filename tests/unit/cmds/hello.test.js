@@ -1,4 +1,4 @@
-const hello = require("../../cmds/hello");
+const hello = require("../../../cmds/hello");
 
 test("Prints 'Hello <name>!' if name argument is provided", () => {
   expect(hello({ name: "Test" })).toBe("Hello Test!");

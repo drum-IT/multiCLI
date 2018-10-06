@@ -1,4 +1,4 @@
-const country = require("../../cmds/country");
+const country = require("../../../cmds/country");
 
 test("Return an object containing country data.", async () => {
   const results = await country({});
@@ -9,6 +9,6 @@ test("Return an object containing country data.", async () => {
     callingCodes: expect.any(Array),
     demonym: expect.any(String),
     languages: expect.any(Array),
-    currencies: expect.any(Array),
-  }); 
+    currencies: expect.any(Array)
+  });
 });

@@ -2,6 +2,7 @@ const ora = require("ora");
 const getWeather = require("../utils/weather");
 const getLocation = require("../utils/location");
 const error = require("../utils/error");
+const pretty = require('../utils/pretty-print/pretty-print');
 
 module.exports = async args => {
   const spinner = ora().start();
@@ -9,9 +10,9 @@ module.exports = async args => {
     const location = args.location || args.l || (await getLocation("location"));
     const weather = await getWeather(location);
     spinner.stop();
-    console.log(`Forecast for ${location}:`);
+    pretty.successBright(`Forecast for ${location}:`);
     weather.forecast.forEach(item =>
-      console.log(
+      pretty.success(
         `\t${item.date} - Low: ${item.low}° | High: ${item.high}° | ${
           item.text
         }`
@@ -22,4 +23,4 @@ module.exports = async args => {
     spinner.stop();
     return error(err, true);
   }
-};
+}; 

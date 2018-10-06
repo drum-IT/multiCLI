@@ -2,6 +2,7 @@
 const ora = require("ora");
 const getWeather = require("../utils/weather");
 const getLocation = require("../utils/location");
+const pretty = require('../utils/pretty-print/pretty-print');
 
 // get the current weather conditions for a location.
 module.exports = async args => {
@@ -14,8 +15,8 @@ module.exports = async args => {
       temp: weather.condition.temp,
       text: weather.condition.text
     };
-    console.log(`Current conditions in ${location}:`);
-    console.log(`\t${weather.condition.temp}° ${weather.condition.text}`);
+    pretty.logStrong(`Current conditions in ${location}:`);
+    pretty.logBright(`\t${weather.condition.temp}° ${weather.condition.text}`);
     return conditions;
   } catch (err) {
     spinner.stop();

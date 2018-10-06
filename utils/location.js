@@ -8,12 +8,14 @@ module.exports = async type => {
     method: "get",
     url: "http://ip-api.com/json"
   });
-  const { city, region, timezone } = results.data;
+  const { city, region, timezone, country } = results.data;
   switch (type) {
     case "location":
       return `${city}, ${region}`;
     case "timezone":
       return { timezone, city, region };
+    case "country":
+      return country;
     default:
       return error("No location type specified", true);
   }

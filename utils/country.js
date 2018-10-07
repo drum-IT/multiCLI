@@ -6,5 +6,5 @@ module.exports = async (country) => {
         method: "get",
         url: `https://restcountries.eu/rest/v2/name/${country}`
     });
-    return results.data[0];
+    return {name, alpha3Code, capital, callingCodes, subregion, demonym, languages, currencies} = results.data[0];
 }

@@ -1,4 +1,4 @@
-const country = require("../../cmds/country");
+const country = require("../../../cmds/country");
 
 test("Return an object containing country data.", async () => {
   const results = await country({});

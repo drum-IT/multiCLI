@@ -9,7 +9,6 @@ module.exports = async args => {
     const location = args.info || args.i || (await getLocation("country"));
     const country = await getCountryInfo(location);
     const {name, alpha3Code, capital, callingCodes, subregion, demonym, languages, currencies} = country;
-    const countryData = {name, alpha3Code, capital, callingCodes, subregion, demonym, languages, currencies};
 
     spinner.stop();
     console.log(
@@ -21,7 +20,7 @@ module.exports = async args => {
       * Currency: ${currencies[0].name} (${currencies[0].code},${currencies[0].symbol})
       * People: ${demonym}`
     );    
-    return countryData;
+    return country;
   } catch(err) {
     spinner.stop();
     console.error(err);

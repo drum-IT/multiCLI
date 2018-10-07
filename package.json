@@ -11,6 +11,21 @@
   },
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/drum-IT/multiCLI/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drum-IT/multiCLI.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "multipurpose",
+    "weather",
+    "clock",
+    "world information"
+  ],
+  "preferGlobal": true,
   "bin": {
     "multicli": "bin/multicli"
   },

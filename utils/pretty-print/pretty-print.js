@@ -17,7 +17,7 @@ module.exports = {
    * Typical `console.log()`.
    */
   lame: (message) => {
-    colorize(message);
+    console.log(message);
   },
   /**
    * [styled]
@@ -94,6 +94,6 @@ module.exports = {
  * @param {string} effect - ASCII color code, defined in dictionary.
  */
 function colorize(string, fg, bg, effect) {
-  return console.log(`${fg || ''}${bg || ''}${effect || ''}${string || ''}${colors.reset}`);
+  return console.log(`${fg || ''}${bg || ''}${effect || ''}${string || ''}${colors.reset || ''}`);
 }
 

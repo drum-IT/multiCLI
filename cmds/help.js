@@ -1,4 +1,4 @@
-const pretty = require('../utils/pretty-print/pretty-print');
+const pretty = require("../utils/pretty-print/pretty-print");
 
 // the text sent by the help command
 const menus = {
@@ -12,6 +12,8 @@ const menus = {
     forecast ........... show a weather forecast for a location
     clock .............. get date and time for current location based on IP address
     country............. get helpful country information for a location
+    quote .............. display a random quote
+    image .............. get a random url image of specified dimenions from picsum API
     
     `,
   weather: `
@@ -44,7 +46,7 @@ const menus = {
     --info, -i ..... the country you would like information on.
     
     if no options are provided, country information based on the user's IP address will be shown.
-  `,
+  `
 };
 
 // determine which help text to log, and log it

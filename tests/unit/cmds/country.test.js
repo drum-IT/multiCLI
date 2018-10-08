@@ -12,3 +12,8 @@ test("Return an object containing country data.", async () => {
     currencies: expect.any(Array)
   });
 });
+
+test("Return an error if country is not found.", async () => {
+  const results = await country({info: 'china6'});
+  expect(results).toBe('Not Found');
+});

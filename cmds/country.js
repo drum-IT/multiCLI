@@ -2,10 +2,13 @@
 const ora = require("ora");
 const getLocation = require('../utils/location');
 const getCountryInfo = require('../utils/country');
+const error = require('../utils/error.js');
+
 
 module.exports = async args => {
+  
+  const spinner = ora().start();
   try {
-    const spinner = ora().start();
     const location = args.info || args.i || (await getLocation("country"));
     const country = await getCountryInfo(location);
     const {name, alpha3Code, capital, callingCodes, subregion, demonym, languages, currencies} = country;
@@ -23,6 +26,7 @@ module.exports = async args => {
     return country;
   } catch(err) {
     spinner.stop();
-    console.error(err);
+    return error(err.response.data.message);
+    //error(err.data.message);
   }
 };

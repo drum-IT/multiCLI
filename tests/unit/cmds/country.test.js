@@ -9,8 +9,8 @@ test("Return an object containing country data.", async () => {
     callingCodes: expect.any(Array),
     demonym: expect.any(String),
     languages: expect.any(Array),
-    currencies: expect.any(Array),
-  }); 
+    currencies: expect.any(Array)
+  });
 });
 
 test("Return an error if country is not found.", async () => {
